@@ -19,7 +19,7 @@ public class OrderController {
     public Object getUserTest(@PathVariable Integer id){
 
         String user = userFeign.findUserById(id);
-        System.out.print(user);
+        System.out.print("订单服务请求用户服务结果："+user);
         return user;
     }
 }
